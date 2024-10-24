@@ -144,7 +144,7 @@ public class Main
           out.println("Enter the size of the array:" );
           int arr_size44 = in.nextInt();
   
-          int[] arr4 = new int[arr_size44];
+          int[] arr44 = new int[arr_size44];
           out.println("Fill the created array: ");
           for (int i = 0; i < arr44.length; i ++) {
               arr44[i] = in.nextInt();
