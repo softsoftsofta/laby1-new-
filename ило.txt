@@ -3,487 +3,514 @@ import java.util.Scanner;
 import static java.lang.Math.abs;
 public class Main
 {
- public static void main(String[] args) {
-  System.out.println("Hello World");
-  
-  Scanner in = new Scanner(System.in);
-  Main m = new Main();
-  
-  out.println("Enter the number of the task: ");
-  int n = in.nextInt();
-  switch(n) {
-      case 12:    
-          out.println("Enter the number to sum last two digits: ");
-          int n2 = in.nextInt();
-          int x2 = m.sumLastNums(n2);
-          out.println(x2);
-          break;
-      case 14:
-          out.println("Enter the number: ");
-          int n4 = in.nextInt();
-          boolean x4 = m.isPositive(n4);
-          out.println(x4);
-          break;
-      case 16:
-          out.println("Enter the character: ");
-          char n6 = in.next().charAt(0);
-          boolean x6 = m.isUpperCase(n6);
-          out.println(x6);
-          break;
-      case 18:
-          out.println("Enter the first number: ");
-          int a8 = in.nextInt();
-          out.println("Enter the second number: ");
-          int b8 = in.nextInt();
-          boolean x8 = m.isDivisor(a8, b8);
-          out.println(x8);
-          break;
-       case 110:
-          out.println("Enter the first number: ");
-          int a10 = in.nextInt();
-          out.println("Enter the second number: ");
-          int b10 = in.nextInt();
-          int x10 = m.lastNumSum(a10,b10);
-          out.println(a10 + " + " + b10 + " = " + x10);
-          for (int i = 0; i < 3; i++) {
-              a10 = x10;
-              out.println("Enter the next number: ");
-              b10 = in.nextInt();
-              x10 = m.lastNumSum(a10,b10);
-              out.println(a10 + " + " + b10 + " = " + x10);
-          }
-          break;
-      /*default: out.println("ERROR"); break;*/
-      case 22:    
-          out.println("Enter the first number: ");
-          int a22 = in.nextInt();
-          out.println("Enter the second number: ");
-          int b22 = in.nextInt();
-          double x22 = m.safeDiv(a22, b22);
-          out.println(x22);
-          break;
-      case 24:
-          out.println("Enter the first number: ");
-          int a24 = in.nextInt();
-          out.println("Enter the second number: ");
-          int b24 = in.nextInt();
-          String x24 = m.makeDecision(a24, b24);
-          out.println(x24);
-          break;
-      case 26:
-          out.println("Enter the first number: ");
-          int a26 = in.nextInt();
-          out.println("Enter the second number: ");
-          int b26 = in.nextInt();
-          out.println("Enter the third number: ");
-          int c26 = in.nextInt();
-          boolean x26 = m.sum3(a26, b26, c26);
-          out.println(x26);
-          break;
-      case 28:
-          out.println("Enter the age: ");
-          int a28 = in.nextInt();
-          String x28 = m.age(a28);
-          out.println(x28);
-          break;
-       case 210:
-          out.println("Enter the day of the week: ");
-          String a210 = in.next();
-          m.printDays(a210);
-          break;
-        case 32:    
-          out.println("Enter the number: ");
-          int n32 = in.nextInt();
-          String x32 = m.reverseListNums(n32);
-          out.println(x32);
-          break;
-      case 34:
-          out.println("Enter the number: ");
-          int a34 = in.nextInt();
-          out.println("Enter the degree of the number: ");
-          int b34 = in.nextInt();
-          int x34 = m.pow(a34, b34);
-          out.println(x34);
-          break;
-      case 36:
-          out.println("Enter the number: ");
-          int n36 = in.nextInt();
-          boolean x36 = m.equalNum(n36);
-          out.println(x36);
-          break;
-      case 38:
-          out.println("Enter the number of pyramid levels: ");
-          int a38 = in.nextInt();
-          m.leftTriangle(a38);
-          break;
-      case 310:
-          m.guessGame();
-          break; 
-      /*default: out.println("ERROR"); break;*/
-      case 42:
-          out.println("Enter the size of the array:" );
-          int arr_size42 = in.nextInt();
-  
-          int[] arr42 = new int[arr_size42];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr42.length; i ++) {
-              arr42[i] = in.nextInt();
-              
-          }
-          for (int i = 0; i < arr42.length; i++) {
-              out.print(arr42[i] + " ");
-              
-          }
-  out.println(" ");
-          out.println("Enter the search number: ");
-          int n42 = in.nextInt();
-          int x42 = m.findLast(arr42, n42);
-          out.println(x42);
-          break;
-      case 44:
-          out.println("Enter the size of the array:" );
-          int arr_size44 = in.nextInt();
-  
-          int[] arr44 = new int[arr_size44];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr44.length; i ++) {
-              arr44[i] = in.nextInt();
-              
-          }
-          for (int i = 0; i < arr44.length; i++) {
-              out.print(arr44[i] + " ");
-              
-          }
-          out.println("Enter the number: ");
-          int a44 = in.nextInt();
-          out.println("Enter the number's position: ");
-          int b44 = in.nextInt();
-          int[] x44 = m.add(arr44, a44, b44);
-          for (int i = 0; i <x44.length; i++) {
-             out.print(x44[i] + " ");
-          }
-          out.println(" ");
-          break;
-      case 46:
-          out.println("Enter the size of the array:" );
-          int arr_size46 = in.nextInt();
-  
-          int[] arr46 = new int[arr_size46];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr46.length; i ++) {
-              arr46[i] = in.nextInt();
-              
-          }
-          for (int i = 0; i < arr46.length; i++) {
-              out.print(arr46[i] + " ");
-              
-          }
-          m.reverse(arr46);
-          for (int i = 0; i < arr46.length; i++) {
-             out.print(arr46[i] + " ");
-          }
-          out.println(" ");
-          break;
-      case 48:
-          out.println("Enter the size of the array:" );
-          int arr_size48 = in.nextInt();
-  
-          int[] arr48 = new int[arr_size48];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr48.length; i ++) {
-              arr48[i] = in.nextInt();
-              
-          }
-          for (int i = 0; i < arr48.length; i++) {
-              out.print(arr48[i] + " ");
-              
-          }
-          out.println("Create the second array");
-          
-          out.println("Enter the size of the array:" );
-          int arr_size248 = in.nextInt();
-          int[] arr248 = new int[arr_size248];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr248.length; i ++) {
-              arr248[i] = in.nextInt();
-          }
-  
-          for (int i = 0; i < arr248.length; i++) {
-              out.print(arr248[i] + " ");
-          }
-          out.println(" ");
-          
-          int[] x48 = m.concat(arr48,arr248);
-          for (int i = 0; i < x48.length; i++) {
-             out.print(x48[i] + " ");
-          }
-          out.println(" ");
-          break;
-      case 410:
-          out.println("Enter the size of the array:" );
-          int arr_size410 = in.nextInt();
-  
-          int[] arr410 = new int[arr_size410];
-          out.println("Fill the created array: ");
-          for (int i = 0; i < arr410.length; i ++) {
-              arr410[i] = in.nextInt();
-              
-          }
-          for (int i = 0; i < arr410.length; i++) {
-              out.print(arr410[i] + " ");
-              
-          }
-          int[] x410 = m.deleteNegative(arr410);
-          for (int i = 0; i < x410.length; i++) {
-             out.print(x410[i] + " ");
-          }
-          out.println(" ");
-          break;
-      default: out.println("ERROR"); break;
-  }
-  
- }
- 
- public int sumLastNums (int x) {
-     if ((x < 10) && (x > -10)) {
-        out.println("ERROR: Number is longer than 2 digits. Returning 0");
-        return 0;
-     }
-     else {
-         int y_last = (abs(x)) % 10;
-         int y_prelast = (abs(x) / 10) % 10;
-         return y_last + y_prelast;
-     }
- }  
- 
- public boolean isPositive (int x) {
-     if (x > 0) {
-         out.println("Number is positive");
-         return true;
-     }
-     else {
-         out.println("Number is not positive");
-         return false;
-     }
- }
- 
- public boolean isUpperCase (char x) {
-     int a = x;
-     if ((a >= 65) && (a <= 90)) {
-         out.println("Character is upper case");
-         return true;
-     }
-     else {
-         out.println("Character is not upper case");
-         return false;
-     }
- }
- 
-  public boolean isDivisor (int a, int b) {
-      if ((a % b == 0) || (b % a == 0)) {
-          return true;
-      }
-      else {
-          return false;
-      }
-  }
-  
-  public int lastNumSum(int a, int b) {
-      return (abs(a) % 10) + (abs(b) % 10);
-  }
-  public double safeDiv (int x, int y) {
-     if (y == 0) {
-         return 0;
-     }
-     else {
-         return (x / y);
-     }
- }
- 
-  public String makeDecision (int x, int y) {
-      if (x > y) {
-          return (x + ">" + y);
-      }
-      if (x < y) {
-          return (x + "<" + y);
-      }
-      else {
-          return (x + "==" + y);
-      }
-  }
- 
-  public boolean sum3 (int x, int y, int z) {
-      if ((x + y == z)||(y + z == x)||(x + z == y)) {
-          return true;
-      }
-      else {
-          return false;
-      }
-  } 
- 
-  public String age (int x) {
-      switch(x % 10) {
-          case 1:
-              if (x != 11) {
-                  return (x + " god");
-              }
-              else {
-                  return (x + " let");
-              }
-          case 2: case 3: case 4:
-              if ((x < 12) && (x > 14)) {
-                  return (x + " goda");
-              }
-              else {
-                  return (x + " let");
-              }
-          case 5: case 6: case 7: case 8: case 9: case 0:
-              return (x + " let");
-          default: return "ERROR";
-      }
-  }
-  
-  public void printDays (String x) {
-       switch(x) {
-         case "Monday": out.println("Monday");
-         case "Tuesday": out.println("Tuesday");
-         case "Wednesday": out.println("Wednesday");
-         case "Thursday": out.println("Thursday");
-         case "Friday": out.println("Friday");
-         case "Saturday": out.println("Saturday");
-         case "Sunday": out.println("Sunday"); break;
-         default: out.println("NOT A DAY OF THE WEEK"); break;
-       }
-  }
-   public String reverseListNums (int x) {
-     String numbers = "";
-     for (int i = x; i >= 0; i--) {
-         numbers += i + " ";
-     }
-     return numbers;
- }
- 
-  public int pow (int x, int y) {
-      int num = 1;
-      for (int i = 1; i < y; i++) {
-          num *= x;
-      }
-      return num;
-  }
-  
-  public boolean equalNum (int x) {
-      int x1 = x % 10;
-      int x2 = x % 10;
-      while (x1 == x2) {
-          x /= 10;
-          x2 = x % 10;
-      }
-      if (x == 0) {
-          return true;
-      }
-      else {
-          return false;
-      }
-  }
-  
-  public void leftTriangle (int x) {
-      String triangle = "";
-      for (int i = 0; i < x; i++) {
-          triangle += "*";
-          out.println(triangle);
-      }
-  }
- 
-  public void guessGame() {
-      Scanner in = new Scanner(System.in);
-      int x = (int)(Math.random()*(9+1));
-      int y = 10;
-      int count = 0;
-      while (y != x) {
-        if (count == 0) {
-            out.println("Try and guess the number from 0 to 9!");
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+
+        Scanner in = new Scanner(System.in);
+        Main m = new Main();
+
+        out.println("Enter the number of the task: ");
+        int n = in.nextInt();
+        switch(n) {
+            case 12:
+                out.println("Enter the number to sum last two digits: ");
+                int n2 = in.nextInt();
+                int x2 = m.sumLastNums(n2);
+                out.println(x2);
+                break;
+            case 14:
+                out.println("Checking if the number positive or not");
+                out.println("Enter the number: ");
+                int n4 = in.nextInt();
+                boolean x4 = m.isPositive(n4);
+                out.println(x4);
+                break;
+            case 16:
+                out.println("Checking if the letter is UPPERCASE or not");
+                out.println("Enter the character: ");
+                char n6 = in.next().charAt(0);
+                boolean x6 = m.isUpperCase(n6);
+                out.println(x6);
+                break;
+            case 18:
+                out.println("Checking whether the numbers are divisible by each other or not");
+                out.println("Enter the first number: ");
+                int a8 = in.nextInt();
+                out.println("Enter the second number: ");
+                int b8 = in.nextInt();
+                boolean x8 = m.isDivisor(a8, b8);
+                out.println(x8);
+                break;
+            case 110:
+                out.println("Counting the sum of the digits of two numbers from the category of ones 5 times");
+                out.println("Enter the first number: ");
+                int a10 = in.nextInt();
+                out.println("Enter the second number: ");
+                int b10 = in.nextInt();
+                int x10 = m.lastNumSum(a10,b10);
+                out.println(a10 + " + " + b10 + " = " + x10);
+                for (int i = 0; i < 3; i++) {
+                    a10 = x10;
+                    out.println("Enter the next number: ");
+                    b10 = in.nextInt();
+                    x10 = m.lastNumSum(a10,b10);
+                    out.println(a10 + " + " + b10 + " = " + x10);
+                }
+                break;
+            case 22:
+                out.println("Dividing x by y");
+                out.println("Enter the first number: ");
+                int a22 = in.nextInt();
+                out.println("Enter the second number: ");
+                int b22 = in.nextInt();
+                double x22 = m.safeDiv(a22, b22);
+                out.println(x22);
+                break;
+            case 24:
+                out.println("> < or =");
+                out.println("Enter the first number: ");
+                int a24 = in.nextInt();
+                out.println("Enter the second number: ");
+                int b24 = in.nextInt();
+                String x24 = m.makeDecision(a24, b24);
+                out.println(x24);
+                break;
+            case 26:
+                out.println("Check if any two numbers can be added together to get the third one.");
+                out.println("Enter the first number: ");
+                int a26 = in.nextInt();
+                out.println("Enter the second number: ");
+                int b26 = in.nextInt();
+                out.println("Enter the third number: ");
+                int c26 = in.nextInt();
+                boolean x26 = m.sum3(a26, b26, c26);
+                out.println(x26);
+                break;
+            case 28:
+                out.println("The right word for the age");
+                out.println("Enter the age: ");
+                int a28 = in.nextInt();
+                String x28 = m.age(a28);
+                out.println(x28);
+                break;
+            case 210:
+                out.println("Days of the week");
+                out.println("Enter the day of the week: ");
+                String a210 = in.next();
+                m.printDays(a210);
+                break;
+            case 32:
+                out.println("A string in which all numbers from x to (inclusive) will be written");
+                out.println("Enter the number: ");
+                int n32 = in.nextInt();
+                String x32 = m.reverseListNums(n32);
+                out.println(x32);
+                break;
+            case 34:
+                out.println("The result of raising x to the power of y");
+                out.println("Enter the number: ");
+                int a34 = in.nextInt();
+                out.println("Enter the degree of the number: ");
+                int b34 = in.nextInt();
+                int x34 = m.pow(a34, b34);
+                out.println(x34);
+                break;
+            case 36:
+                out.println("Checking if all the signs of the number are the same");
+                out.println("Enter the number: ");
+                int n36 = in.nextInt();
+                boolean x36 = m.equalNum(n36);
+                out.println(x36);
+                break;
+            case 38:
+                out.println("Left triangle of ‘*’ characters");
+                out.println("Enter the number of pyramid levels: ");
+                int a38 = in.nextInt();
+                m.leftTriangle(a38);
+                break;
+            case 310:
+                out.println("Guess the number from 0 to 9 game");
+                m.guessGame();
+                break;
+            case 42:
+                out.println("Enter the size of the array:" );
+                int arr_size42 = in.nextInt();
+
+                int[] arr42 = new int[arr_size42];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr42.length; i ++) {
+                    arr42[i] = in.nextInt();
+
+                }
+                for (int i = 0; i < arr42.length; i++) {
+                    out.print(arr42[i] + " ");
+
+                }
+                out.println(" ");
+                out.println("The index of the last occurrence of the number x in the array arr");
+                out.println("Enter the search number: ");
+                int n42 = in.nextInt();
+                int x42 = m.findLast(arr42, n42);
+                out.println(x42);
+                break;
+            case 44:
+                out.println("Enter the size of the array:" );
+                int arr_size44 = in.nextInt();
+
+                int[] arr44 = new int[arr_size44];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr44.length; i ++) {
+                    arr44[i] = in.nextInt();
+
+                }
+                for (int i = 0; i < arr44.length; i++) {
+                    out.print(arr44[i] + " ");
+
+                }
+                out.println("The x value will be inserted into the pos position");
+                out.println("Enter the number: ");
+                int a44 = in.nextInt();
+                out.println("Enter the number's position: ");
+                int b44 = in.nextInt();
+                int[] x44 = m.add(arr44, a44, b44);
+                for (int i = 0; i <x44.length; i++) {
+                    out.print(x44[i] + " ");
+                }
+                out.println(" ");
+                break;
+            case 46:
+                out.println("Enter the size of the array:" );
+                int arr_size46 = in.nextInt();
+
+                int[] arr46 = new int[arr_size46];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr46.length; i ++) {
+                    arr46[i] = in.nextInt();
+
+                }
+                for (int i = 0; i < arr46.length; i++) {
+                    out.print(arr46[i] + " ");
+
+                }
+                out.println(" ");
+                out.println("Reverse the array");
+                m.reverse(arr46);
+                for (int i = 0; i < arr46.length; i++) {
+                    out.print(arr46[i] + " ");
+                }
+                out.println(" ");
+                break;
+            case 48:
+                out.println("Enter the size of the array:" );
+                int arr_size48 = in.nextInt();
+
+                int[] arr48 = new int[arr_size48];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr48.length; i ++) {
+                    arr48[i] = in.nextInt();
+
+                }
+                for (int i = 0; i < arr48.length; i++) {
+                    out.print(arr48[i] + " ");
+
+                }
+                out.println(" ");
+                out.println("New array, in which the elements of the first array (arr1) go first, and then the second (arr2)");
+                out.println("Create the second array");
+
+                out.println("Enter the size of the array:" );
+                int arr_size248 = in.nextInt();
+                int[] arr248 = new int[arr_size248];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr248.length; i ++) {
+                    arr248[i] = in.nextInt();
+                }
+
+                for (int i = 0; i < arr248.length; i++) {
+                    out.print(arr248[i] + " ");
+                }
+                out.println(" ");
+
+                int[] x48 = m.concat(arr48,arr248);
+                for (int i = 0; i < x48.length; i++) {
+                    out.print(x48[i] + " ");
+                }
+                out.println(" ");
+                break;
+            case 410:
+                out.println("Enter the size of the array:" );
+                int arr_size410 = in.nextInt();
+
+                int[] arr410 = new int[arr_size410];
+                out.println("Fill the created array: ");
+                for (int i = 0; i < arr410.length; i ++) {
+                    arr410[i] = in.nextInt();
+
+                }
+                for (int i = 0; i < arr410.length; i++) {
+                    out.print(arr410[i] + " ");
+
+                }
+                out.println(" ");
+                out.println("A new array in which negative numbers are excluded");
+                int[] x410 = m.deleteNegative(arr410);
+                for (int i = 0; i < x410.length; i++) {
+                    out.print(x410[i] + " ");
+                }
+                out.println(" ");
+                break;
+            default: out.println("ERROR"); break;
+        }
+
+    }
+
+    public int sumLastNums (int x) {
+        if ((x < 10) && (x > -10)) {
+            out.println("ERROR: Number is longer than 2 digits. Returning 0");
+            return 0;
         }
         else {
-            out.println("WRONG! Try again");
+            int y_last = (abs(x)) % 10;
+            int y_prelast = (abs(x) / 10) % 10;
+            return y_last + y_prelast;
         }
-        y = in.nextInt();
-        count++;
-      }
-      out.println("YOU WIN! AMOUNT OF TRIES: " + count);
-  }
-  
-  public int findLast (int[] arr, int x) {
-     int counter = -1;
-     for (int i = 0; i < arr.length; i++) {
-         if (arr[i] == x) {
-             counter = i;
-         }
-     }
-     return counter;
- }
- 
- public int[] add (int[] arr, int x, int pos) {
-     int[] arr2 = new int[arr.length + 1];
-     int j = 0;
-     int i = 0;
-     while (j != arr2.length) {
-         if (j == pos) {
-             arr2[j] = x;
-             j++;
-         }
-         else {
-             arr2[j] = arr[i];
-             j++; 
-             i++;
-         }
-     }
-     return arr2;
- }
- 
- public void reverse (int[] arr) {
-     int[] arr2 = new int[arr.length];
-     int j = arr2.length - 1;
-     for (int i = 0; i < arr.length; i++) {
-         arr2[i] = arr[j];
-         j--;
-     }
-     for (int i = 0; i < arr.length; i++) {
-         arr[i] = arr2[i];
-     }
- }
- 
- public int[] concat (int[] arr1,int[] arr2) {
-     int[] arr3 = new int[arr1.length + arr2.length];
-     int j = 0;
-     for (int i = 0; i < arr1.length; i++) {
-         arr3[j] = arr1[i];
-         j++;
-     }
-     for (int i = 0; i < arr2.length; i++) {
-         arr3[j] = arr2[i];
-         j++;
-     }
-     return arr3;
- }
- 
- public int[] deleteNegative (int[] arr) {
-     int count = 0;
-     for (int i = 0; i < arr.length; i++) {
-         if (arr[i] < 0) {
-             count++;
-         }
-     }
-     int[] arr2 = new int[count];
-     int j = 0;
-     for (int i = 0; i < arr.length; i++) {
-         if (arr[i] >= 0) {
-             arr2[j] = arr[i];
-             j++;
-         }
-     }
-     return arr2;
- }
-  
- 
- 
+    }
+
+    public boolean isPositive (int x) {
+        if (x > 0) {
+            out.println("Number is positive");
+            return true;
+        }
+        else {
+            out.println("Number is not positive");
+            return false;
+        }
+    }
+
+    public boolean isUpperCase (char x) {
+        int a = x;
+        if ((a >= 65) && (a <= 90)) {
+            out.println("Character is upper case");
+            return true;
+        }
+        else {
+            out.println("Character is not upper case");
+            return false;
+        }
+    }
+
+    public boolean isDivisor (int a, int b) {
+        if ((a % b == 0) || (b % a == 0)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public int lastNumSum(int a, int b) {
+        return (abs(a) % 10) + (abs(b) % 10);
+    }
+    public double safeDiv (int x, int y) {
+        if (y == 0) {
+            return 0;
+        }
+        else {
+            return (x / y);
+        }
+    }
+
+    public String makeDecision (int x, int y) {
+        if (x > y) {
+            return (x + ">" + y);
+        }
+        if (x < y) {
+            return (x + "<" + y);
+        }
+        else {
+            return (x + "==" + y);
+        }
+    }
+
+    public boolean sum3 (int x, int y, int z) {
+        if ((x + y == z)||(y + z == x)||(x + z == y)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public String age (int x) {
+        switch(x % 10) {
+            case 1:
+                if (x != 11) {
+                    return (x + " god");
+                }
+                else {
+                    return (x + " let");
+                }
+            case 2: case 3: case 4:
+                if ((x < 12) && (x > 14)) {
+                    return (x + " goda");
+                }
+                else {
+                    return (x + " let");
+                }
+            case 5: case 6: case 7: case 8: case 9: case 0:
+                return (x + " let");
+            default: return "ERROR";
+        }
+    }
+
+    public void printDays (String x) {
+        switch(x) {
+            case "Monday": out.println("Monday");
+            case "Tuesday": out.println("Tuesday");
+            case "Wednesday": out.println("Wednesday");
+            case "Thursday": out.println("Thursday");
+            case "Friday": out.println("Friday");
+            case "Saturday": out.println("Saturday");
+            case "Sunday": out.println("Sunday"); break;
+            default: out.println("NOT A DAY OF THE WEEK"); break;
+        }
+    }
+    public String reverseListNums (int x) {
+        String numbers = "";
+        for (int i = x; i >= 0; i--) {
+            numbers += i + " ";
+        }
+        return numbers;
+    }
+
+    public int pow (int x, int y) {
+        int num = 1;
+        for (int i = 1; i < y; i++) {
+            num *= x;
+        }
+        return num;
+    }
+
+    public boolean equalNum (int x) {
+        int x1 = x % 10;
+        int x2 = x % 10;
+        while (x1 == x2) {
+            x /= 10;
+            x2 = x % 10;
+        }
+        if (x == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public void leftTriangle (int x) {
+        String triangle = "";
+        for (int i = 0; i < x; i++) {
+            triangle += "*";
+            out.println(triangle);
+        }
+    }
+
+    public void guessGame() {
+        Scanner in = new Scanner(System.in);
+        int x = (int)(Math.random()*(9+1));
+        int y = 10;
+        int count = 0;
+        while (y != x) {
+            if (count == 0) {
+                out.println("Try and guess the number from 0 to 9!");
+            }
+            else {
+                out.println("WRONG! Try again");
+            }
+            y = in.nextInt();
+            count++;
+        }
+        out.println("YOU WIN! AMOUNT OF TRIES: " + count);
+    }
+
+    public int findLast (int[] arr, int x) {
+        int counter = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                counter = i;
+            }
+        }
+        return counter;
+    }
+
+    public int[] add (int[] arr, int x, int pos) {
+        int[] arr2 = new int[arr.length + 1];
+        int j = 0;
+        int i = 0;
+        while (j != arr2.length) {
+            if (j == pos) {
+                arr2[j] = x;
+                j++;
+            }
+            else {
+                arr2[j] = arr[i];
+                j++;
+                i++;
+            }
+        }
+        return arr2;
+    }
+
+    public void reverse (int[] arr) {
+        int[] arr2 = new int[arr.length];
+        int j = arr2.length - 1;
+        for (int i = 0; i < arr.length; i++) {
+            arr2[i] = arr[j];
+            j--;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr2[i];
+        }
+    }
+
+    public int[] concat (int[] arr1,int[] arr2) {
+        int[] arr3 = new int[arr1.length + arr2.length];
+        int j = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            arr3[j] = arr1[i];
+            j++;
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            arr3[j] = arr2[i];
+            j++;
+        }
+        return arr3;
+    }
+
+    public int[] deleteNegative(int[] arr) {
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                count++;
+            }
+        }
+
+        if (count == 0) {
+            System.out.println("There is no negative numbers");
+            return new int[0]; // Возвращаем пустой массив
+        }
+
+        int[] arr2 = new int[arr.length - count];
+        int j = 0;
+        
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) {
+                arr2[j] = arr[i];
+                j++;
+            }
+        }
+
+        return arr2;
+    }
+
 }
